@@ -18,7 +18,7 @@ try:
             print(f"[✅ S3] Sukses Membuat Bucket: {nama_bucket}")
         elif aksi == "delete":
             s3.delete_bucket(Bucket=nama_bucket)
-            print(f"[❌ S3] Sukses Menghapus Bucket: {name_bucket}")
+            print(f"[❌ S3] Sukses Menghapus Bucket: {nama_bucket}")
 
     # 2. FUNGSI UTAMA AMAZON EC2 (CREATE & TERMINATE)
     def kelola_ec2(aksi="launch", instance_id=None):
@@ -33,7 +33,7 @@ try:
 
     # --- Simulasi Otomatis Siklus Hidup Resource ---
     print("\n[*] Menjalankan pengujian sistem...")
-    kelola_s3("bucket-tugas-luthfy", "create")
+    kelola_s3("bucket-tugas-wisnu", "create")
     id_baru = kelola_ec2("launch")
     
 except Exception as e:
