@@ -4,7 +4,7 @@ import pandas as pd
 # Konfigurasi Koneksi MiniStack / LocalStack Lokal
 URL_ENDPOINT = "http://localhost:4566"
 
-print("=== Luthfy Cloud Control — Sistem Aktif ===")
+print("=== Wisnu Cloud Control — Sistem Aktif ===")
 
 try:
     # Inisialisasi Kredensial AWS Dummy untuk Emulator
